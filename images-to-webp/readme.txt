@@ -5,7 +5,7 @@ Tags: pictures, optimize, convert, media
 Requires at least: 5.0
 Requires PHP: 7.0
 Tested up to: 6.9
-Stable tag: 4.9.1
+Stable tag: 5.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -182,6 +182,10 @@ This will find all the files with a `.webp` extension and if there is similar fi
 
 
 == Changelog ==
+
+= 5.0 =
+* now images are optimized in the background instead of during upload which was slowing down the workflow
+* fix many small things based on the current Plugin Check results
 
 = 4.9.1 =
 * optimize old images convert process

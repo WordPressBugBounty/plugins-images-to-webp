@@ -2,8 +2,7 @@
 
 defined('ABSPATH') || exit;
 
-class webp_converter{
-
+class itw_converter{
 	public function convertImage( $path, $quality ){
 		ini_set( 'memory_limit', '1G' );
 		set_time_limit( 120 );
@@ -22,13 +21,12 @@ class webp_converter{
 			return false;
 		}
 
-		return array(
+		return [
 			'path' => $output,
-			'size' => array(
+			'size' => [
 				'before' => filesize( $path ),
 				'after' => filesize( $output )
-			)
-		);
+			]
+		];
 	}
-
 }

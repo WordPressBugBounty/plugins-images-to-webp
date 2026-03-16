@@ -62,7 +62,7 @@ jQuery(document).ready(function($){
 				type: 'POST',
 				url: ajaxurl,
 				data: {
-					action: 'convert_old_images',
+					action: 'itw_convert_old_images',
 					_wpnonce: $('[name=_wpnonce]').val(),
 					_wp_http_referer: $('[name=_wp_http_referer]').val(),
 					only_missing: only_missing,
