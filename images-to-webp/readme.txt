@@ -179,6 +179,9 @@ There is no button to do that and it will also not delete generated WebPs automa
 
 This will find all the files with a `.webp` extension and if there is similar file with the exact filename, but without the `.webp` extension, then it will delete it.
 
+= .htaccess in /uploads/ folder =
+
+Sometimes you may have an .htaccess file in your /uploads/ folder and if it contains RewriteRules it can break this plugin functionality and you will need to add `RewriteOptions InheritBefore` before your RewriteRules
 
 
 == Changelog ==
